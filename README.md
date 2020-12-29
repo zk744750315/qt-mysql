@@ -15,5 +15,6 @@
 然后执行打包命令 ，方法：输入如下命令行：windeployqt 程序名 敲击回车。（此处为:windeployqt Warehouse.exe）
 最后E:\word\build-Warehouse-Desktop_Qt_5_12_3_MinGW_64_bit-Release\release\warehouse这个文件夹就是最终的程序文件，正常情况下是可以双击exe文件直接运行的，但是因为我们这里用到了mysql,qt不会把libmysql.dll集成到warehouse目标文件夹里面，所以报错了：driver not loaded
 需要我们手动添加，直接将C:\Program Files\MySQL\MySQL Server 5.5\lib\ 下的libmysql.dll放在warehouse文件夹下面就好。
+参考：https://blog.csdn.net/qq_40194498/article/details/79147972
 
 
